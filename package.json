@@ -18,5 +18,14 @@
     "gtts": "^0.2.1",
     "opusscript": "0.0.7",
     "typescript": "^4.1.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjar-dev/discord-vc-tts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanjar-dev/discord-vc-tts/issues"
+  },
+  "homepage": "https://github.com/sanjar-dev/discord-vc-tts#readme"
 }
