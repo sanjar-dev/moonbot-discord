@@ -5,18 +5,14 @@ Type in any text channel `(prefix)say (language) (text)` to bot appear in your c
 
 # Installing
 
-Requirements:
+**Requirements:** You need ffmpeg to use audio in discord.js module and a Discord bot.
 
-You need ffmpeg to use audio in discord.js module and a Discord bot.
-
-Create .env file with your bot token and prefered prefix values like this:
+Create **.env** file with your bot token and prefered prefix values like this:
 ```env
 TOKEN=INSERT_YOUR_TOKEN_HERE
 PREFIX=+
 ```
 
 `npm install` to install all dependencies
-
 `npm build` to build all typescript files
-
 `npm start` to start the bot
