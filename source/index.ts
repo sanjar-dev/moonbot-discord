@@ -31,21 +31,18 @@ client.on('message', async (msg) => {
 
     // Make a call by command name
     switch(command) {
-        case ('hello'): {
+        case ('hello'):
             msg.reply('hello, nice to meet you!');
-        } break;
-
-        case ('help'): {
+            break;
+        case ('help'):
             discord_help(msg);
-        } break;
-
-        case ('clear'): {
+            break;
+        case ('clear'):
             discord_clear(msg, args);
-        } break;
-
-        case ('say'): {
+            break;
+        case ('say'):
             discord_say(msg, args, serversReady);
-        } break;
+            break;
     }
 });
 
