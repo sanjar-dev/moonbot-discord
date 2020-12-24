@@ -15,6 +15,7 @@ PREFIX=+
 ```
 
 Then run these:
+
 `npm install` to install all dependencies<br>
 `npm build` to build all typescript files<br>
 `npm start` to start the bot
