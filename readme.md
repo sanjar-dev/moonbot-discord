@@ -7,12 +7,13 @@ Type in any text channel `(prefix)say (language) (text)` to bot appear in your c
 
 **Requirements:** You need ffmpeg to use audio in discord.js module and a Discord bot.
 
-Create **.env** file with your bot token and prefered prefix values like this:
+Clone repository. Create **.env** file with your bot token and prefered prefix values like this:
 ```env
 TOKEN=INSERT_YOUR_TOKEN_HERE
 PREFIX=+
 ```
 
+Then run these:
 `npm install` to install all dependencies<br>
 `npm build` to build all typescript files<br>
 `npm start` to start the bot
