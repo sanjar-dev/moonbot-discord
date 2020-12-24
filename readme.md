@@ -13,6 +13,6 @@ TOKEN=INSERT_YOUR_TOKEN_HERE
 PREFIX=+
 ```
 
-`npm install` to install all dependencies
-`npm build` to build all typescript files
+`npm install` to install all dependencies<br>
+`npm build` to build all typescript files<br>
 `npm start` to start the bot
