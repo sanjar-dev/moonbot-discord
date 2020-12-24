@@ -9,8 +9,10 @@ Requirements:
 You need ffmpeg to use audio in discord.js module and a Discord bot.
 
 Create .env file with your bot token and prefered prefix values like this:
-    TOKEN=INSERT_YOUR_TOKEN_HERE
-    PREFIX=+
+```env
+TOKEN=INSERT_YOUR_TOKEN_HERE
+PREFIX=+
+```
 
 `npm install`
 to install all dependencies
