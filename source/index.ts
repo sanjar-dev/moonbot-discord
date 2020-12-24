@@ -1,4 +1,3 @@
-// Constant Modules
 require('dotenv').config()
 import * as Discord from 'discord.js';
 
@@ -8,19 +7,13 @@ import { discord_help } from './functions/help';
 
 const client = new Discord.Client();
 
-// State definings
-// let ttsReady = true;
 let serversReady = new Object();
 
-// Client onready event
 client.on('ready', () => {
-    // Log out ready state
     console.log(client.user.username + " is online and ready to use.\n");
-    // Set status
-    client.user.setActivity('+help | +say');
+    client.user.setActivity('+help');
 });
 
-// Message handling
 client.on('message', async (msg) => {
     // Exit onmessage event if the message doesn't start with prefix or if it's a bot
     if (!msg.content.startsWith(process.env.PREFIX) || msg.author.bot) { return; }
