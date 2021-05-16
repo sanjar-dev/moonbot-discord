@@ -1,9 +1,11 @@
-require('dotenv').config()
-import * as Discord from 'discord.js';
+require('dotenv').config();
+import * as Discord from 'discord.js'
+import { registerFont } from 'canvas'
 
-import { discord_say } from './functions/say';
-import { discord_clear } from './functions/clear';
-import { discord_help } from './functions/help';
+import { discord_say } from './functions/say'
+import { discord_clear } from './functions/clear'
+import { discord_help } from './functions/help'
+import { discord_letter } from './functions/letter'
 
 const client = new Discord.Client();
 
@@ -12,6 +14,7 @@ let serversReady = new Object();
 client.on('ready', () => {
     console.log(client.user.username + " is online and ready to use.\n");
     client.user.setActivity('+help');
+    registerFont('./fonts/caveat.ttf', { family: "Caveat" });
 });
 
 client.on('message', async (msg) => {
@@ -35,6 +38,9 @@ client.on('message', async (msg) => {
             break;
         case ('say'):
             discord_say(msg, args, serversReady);
+            break;
+        case ('letter'):
+            discord_letter(msg, args);
             break;
     }
 });

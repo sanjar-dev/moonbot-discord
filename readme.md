@@ -2,7 +2,7 @@
 
 A discord bot with voice chat text-to-speech.
 
-Type in any text channel `(prefix)say (language) (text)` to bot appear in your current voice chat.
+Type in any text channel `(prefix)say (language) (text)` for bot to appear in your current voice chat.
 
 # Installing
 
