@@ -1,21 +1,26 @@
-# Discord Text-To-Speech
-
-A discord bot with voice chat text-to-speech.
-
-Type in any text channel `(prefix)say (language) (text)` for bot to appear in your current voice chat.
+# Moon Speech
+Moon Speech is a Discord bot built with Discord.js. It has multiple features including:
+- Text to Speech
+- "Letter" image creation
 
 # Installing
 
-**Requirements:** You need ffmpeg to use audio in discord.js module and a Discord bot.
+## Requirements
+- Node.js
+- FFmpeg *for Discord.js audio in voice channels*
 
-Clone repository locally. Create **.env** file with your bot token and prefered prefix values like this:
-```env
-TOKEN=INSERT_YOUR_TOKEN_HERE
-PREFIX=+
+## Running locally
+Clone repository locally. Create `.env` file with your bot token and prefered prefix values like this:
+
+```ini
+TOKEN=YOUR_TOKEN
+PREFIX=YOUR_PREFIX
 ```
 
 Then run these:
 
-`npm install` to install all dependencies<br>
-`npm build` to build all typescript files<br>
-`npm start` to start the bot
+- `npm install` to install all node packages
+- `npm build` to build source TypeScript files
+- `npm start` to start the bot
+
+Make sure that you've setuped `.env` file correctly, otherwise it won't work.
