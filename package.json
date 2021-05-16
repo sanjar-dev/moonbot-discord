@@ -1,26 +1,27 @@
 {
   "name": "discord-vc-tts",
   "version": "1.0.0",
-  "description": "Sanjar Platform Interface application bot.",
+  "description": "A Discord.js powered bot with some unique features including: Text to Speech and Canvas Image Generation.",
   "main": "./build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node build/index.js",
     "build": "tsc"
   },
-  "author": "",
+  "author": "SanjarDev",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
-    "@types/node": "^14.14.12",
     "canvas": "^2.7.0",
     "discord.js": "^12.5.1",
     "dotenv": "^8.2.0",
     "gtts": "^0.2.1",
-    "opusscript": "0.0.7",
-    "typescript": "^4.1.3"
+    "opusscript": "0.0.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.45",
+    "typescript": "^4.2.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanjar-dev/discord-vc-tts.git"
