@@ -36,14 +36,8 @@ export async function discord_letter(msg:Discord.Message, args:string[]) {
         context.drawImage(img, 0, 0);
     });
 
-    // // Export image
-    // const buffer = canvas.toBuffer('image/png');
-    // writeFileSync('./images/' + msg.guild.id + '.png', buffer);
-
-    // // Send image to the channel
-    // msg.channel.send(buffer);
-
+    // Send image to the channel
     const bufferAttach = new Discord.MessageAttachment(canvas.toBuffer(), msg.guild.id + '.png');
     msg.channel.send(`${msg.author} ${letterName}`, bufferAttach);
-    console.log("got to this point wtf");
+    msg.delete();
 }
