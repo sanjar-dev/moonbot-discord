@@ -1,15 +1,15 @@
 # Moon Speech
-Moon Speech is a Discord bot built with Discord.js. It has multiple features including:
+**Moon Speech** is a Discord bot built with [discord.js](https://github.com/discordjs/discord.js). It has multiple features including:
 - Text to Speech
-- "Letter" image creation
+- Sending a "letter" image
 
-# Installing
+## Installing
 
-## Requirements
+### Requirements
 - Node.js
-- FFmpeg *for Discord.js audio in voice channels*
+- ffmpeg *for [discord.js](https://github.com/discordjs/discord.js) audio in voice channels*
 
-## Running locally
+### Running locally
 Clone repository locally. Create `.env` file with your bot token and prefered prefix values like this:
 
 ```ini
